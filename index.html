@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta tag for character set -->
+    	<meta charset="utf-8">
+
+		<!-- meta tags for SEO -->
+    	<meta name="description" content="Plan your perfect trip through Europe.">
+    	<meta name="keywords" content="plan travel, travel Europe">
+
+		<!-- Let's add a real title -->
+		<title>EuroTrip Planner</title>
+
+		<!-- External CSS files -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,700,800" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="#"/>
+    <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
+  </head>
+  <body>
+      <header>
+        <nav>
+          <a href="https://www.buzzfeed.com/hannahjewell/where-should-you-take-a-city-break" target="_blank">Take the Quiz!</a>
+        </nav>
+      <h1>EuroTrip Planner</h1>
+      <section class="cities">
+        <div class="top row">
+          <ul>
+            <li class="rome city">
+
+            </li>
+            <li class ="london city">
+
+            </li>
+            <li class = "budapest city">
+
+            </li>
+            <li class = "berlin city">
+
+            </li>
+          </ul>
+        </div>
+        <div class ="bottom row">
+          <ul>
+            <li class="dublin city">
+
+            </li>
+            <li class="prague city">
+
+            </li>
+            <li class="paris city">
+
+            </li>
+            <li class="barcelona city">
+
+            </li>
+          </ul>
+      </div>
+    </section>
+  </header>
+  <section class = "city_chosen clearfix">
+    <div class = "description">
+      <h3>City Clicked</h3>
+      <h4>City Catch Phrase</h4>
+      <p>This will be a description of the city, outlining a few major cultural and historical points such as what the city is known for, must-do’s and things to know (currency, tips, public transit, etc.)</p>
+      <a class = "different_city" href ="#">Choose Different City</a>
+  </div>
+    <div id= "map">
+			<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    </div>
+  </section>
+  <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/app.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmIGO1YcYcZPgnZ_R4bZBXu0tV2XpZbu8&callback=initMap">
+    </script>
+  </body>
+</html>
